@@ -18,6 +18,7 @@ public class MemoryBookRepository implements IBookRepository {
     
     @Override
     public List<Book> getAll() {
+        List
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getAll'");
     }
