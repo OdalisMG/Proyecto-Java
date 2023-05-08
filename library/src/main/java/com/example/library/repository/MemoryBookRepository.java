@@ -33,6 +33,10 @@ public class MemoryBookRepository implements IBookRepository {
 
     @Override
     public Book save(Book book) {
+        if (book.getBookId() == null);
+        {
+            book.setBookId(String.valueOf(System.currentTimeMillis()));
+        }
         return booksMap.put(book.getBookId(), book);
     }
 
